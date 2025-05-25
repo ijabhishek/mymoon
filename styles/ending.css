@@ -20,18 +20,24 @@ body {
 }
 
 .quote {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.2vw;
-    color: #222;
-    max-width: 85%;
-    margin: auto;
-    padding: 24px 32px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
     line-height: 1.6;
-    background: rgba(255, 255, 255, 0.6);
+    padding: 20px 30px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(6px);
-    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    z-index: 5;
+    animation: fadeIn 2s ease-in-out;
+    font-family: 'Georgia', serif;
 }
 
 /* Hover animation for quote */
