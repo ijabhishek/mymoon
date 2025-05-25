@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter:wght@300;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/images/moon.jpg');
+    /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2vw;
+    color: #222;
+    max-width: 85%;
+    margin: auto;
+    padding: 24px 32px;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover animation for quote */
+.quote:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styling */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    background: rgba(255, 255, 255, 0.2);
+    color: #b30000;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .quote {
+        font-size: 3.8vw;
+        padding: 18px 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .quote {
+        font-size: 4.8vw;
+        padding: 14px 20px;
+        border-radius: 16px;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+}

@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    background-color: #ffebf0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url("/images/flower.jpg");
+    /* Path to your image */
+    background-size: cover;
+    /* Scales image to cover the entire screen */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents repetition */
+    height: 100vh;
+    /* Ensures full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.quote {
+    font-size: 24px;
+    color: #d63384;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer Styling */
+/* Simple Footer with Transparent Background */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    background: rgba(244, 241, 241, 0.6);
+    /* Light color with transparency */
+    color: #d00000;
+    /* Deep red text */
+    font-size: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.surprise-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.surprise-image {
+    width: 200px;
+    margin-top: 20px;
+    animation: pop 1s ease-in-out;
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
